@@ -1,5 +1,7 @@
 <h1>Landing Page</h1>
 
+https://dcam17.github.io/LandingPage/
+
 This is a landing page that showcases my skills in front-end web development. The website was built using only raw HTML and CSS, and it is fully responsive, supporting from ultra-wide monitors to small mobile screens.
 
 <br>
