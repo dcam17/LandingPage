@@ -2,15 +2,7 @@
 
 This is a landing page that showcases my skills in front-end web development. The website was built using only raw HTML and CSS, and it is fully responsive, supporting from ultra-wide monitors to small mobile screens.
 
-
-
-
-
-
-
-
-
-
+<br>
 
 <h3>Project Overview</h4>
 
@@ -24,6 +16,7 @@ The contact section gives the user a simple way to insert their email and get in
 
 The footer contains other low-profile relevant information, such as social media links and legal disclaimers.
 
+<br>
 
 <h3>How to Run</h3>
 
