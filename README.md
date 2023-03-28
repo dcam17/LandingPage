@@ -2,6 +2,7 @@
 
 This is a landing page that showcases my skills in front-end web development. The website was built using only raw HTML and CSS, and it is fully responsive, supporting from ultra-wide monitors to small mobile screens.
 
+
 <h3>Project Overview</h4>
 
 The header includes a logo and a navigation menu with buttons that lead to different sections of the page, as well as a profile and cart button.
@@ -13,6 +14,7 @@ The products section has a scrollabe showcase of products, with images and descr
 The contact section gives the user a simple way to insert their email and get in touch.
 
 The footer contains other low-profile relevant information, such as social media links and legal disclaimers.
+
 
 <h3>How to Run</h3>
 
