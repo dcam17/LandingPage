@@ -1,8 +1,8 @@
-#Landing Page
+<h1>Landing Page</h1>
 
 This is a landing page that showcases my skills in front-end web development. The website was built using only raw HTML and CSS, and it is fully responsive, supporting from ultra-wide monitors to small mobile screens.
 
-###Project Overview
+<h3>Project Overview</h4>
 
 The header includes a logo and a navigation menu with buttons that lead to different sections of the page, as well as a profile and cart button.
 
@@ -14,6 +14,6 @@ The contact section gives the user a simple way to insert their email and get in
 
 The footer contains other low-profile relevant information, such as social media links and legal disclaimers.
 
-###How to Run it
+<h3>How to Run</h3>
 
 To run the website, download the code from this repository and open the index.html file in your web browser.
