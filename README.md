@@ -20,4 +20,4 @@ The footer contains other low-profile relevant information, such as social media
 
 <h3>How to Run</h3>
 
-If you just want to see how it looks, it is up on <a src="https://dcam17.github.io/LandingPage/">github pages</a>. To run it on your machine, download the code from this repository and open the index.html file in your web browser.
+If you just want to see how it looks, it is up on github pages: https://dcam17.github.io/LandingPage/. To run it on your machine, download the code from this repository and open the index.html file in your web browser.
