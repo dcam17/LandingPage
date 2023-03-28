@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* BOOT CSS  */
+:root{
+    --black: #333;
+    --white: rgb(230,230,230);
+    --headerH: 5%;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: black;
+    border: 2px solid white;
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+html,body{
+    height: 100%;
+}
+/* BOOT CSS END  */
+
+
+/* STYLE CSS  */
+/* HEADER  */
+header{
+    height: var(--headerH);
+    min-height: 40px;
+
+    background: var(--black);
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1800px;
+    height: 100%;
+
+    padding: 0 20px;
+    margin: 0 auto;
+}
+header h1.logo{
+    width: 20%;
+
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: var(--white);
+}
+header h1.logo:hover{
+    user-select: none;
+    cursor: pointer;
+    color: white;
+}
+
+header nav.menu{
+    display: flex;
+    justify-content: space-around;
+
+    width: 60%;
+}
+header a{
+
+    padding: 4px 16px;
+
+
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--white);
+    transition: .3s;
+}
+header a:hover{
+    cursor: pointer;
+    color: white;
+}
+
+header div.desktop{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+}
+header div.mobile{
+    display: none;
+}
+/* HEADER END  */
+
+/* MAIN  */
+main{
+    position: relative;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+
+    color: white;
+    background-image: url(media/blue1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+main .layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(30,30,30, .3);
+}
+main .container{
+    z-index: 1;
+    position: relative;
+    max-width: 60%;
+    text-align: center;
+}
+main .container > *{
+    margin: 5% 0;
+}
+main .title{
+    font-weight: bold;
+    font-size: 100px;
+}
+main .subTitle{
+    font-weight: normal;
+    font-size: 40px;
+}
+main button{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    background: white;
+    transition: .3s;
+}
+main button:hover{
+    cursor: pointer;
+    font-size: 25px;
+    padding: 22px;
+    color: white;
+    background: black;
+}
+/* MAIN END  */
+
+
+/* SECTION PRODUCTS  */
+section.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+    margin: 0 auto;
+}
+
+.carousel{
+    display: flex;
+    gap: 80px;
+    width: 80%;
+
+    padding: 10px;
+    overflow-x: auto;
+}
+.carousel::-webkit-scrollbar {
+    height: 8px;
+}
+.carousel::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: black;
+    border: none;
+}
+.carousel::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: lightgrey;
+}
+
+.product-box{
+    flex-basis: 300px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-flow: wrap row;
+    align-items: flex-end;
+    height: 300px;
+
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url(media/blue2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .9;
+    transition: .3s;
+}
+.product-box:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.product-box .product-text{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+
+    padding: 2% 4%;
+    color: white;
+    background: black;
+}
+.product-text > *{
+    width: 100%;
+    text-align: center;
+    user-select: none;
+}
+
+/* SECTION PRODUCTS END  */
+
+
+/* SECTION CONTACT  */
+section.contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 500px;
+    background-image: url(media/blue3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+section.contact .layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(30,30,30, .4);
+}
+section.contact .container{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 60%;
+    height: 30%;
+    padding: 40px 60px;
+    border-radius: 40px;
+    background: var(--black);
+}
+section.contact .container h1{
+    width: 40%;
+    font-size: 50px;
+    color: var(--white);
+}
+section.contact .container div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 60%;
+    height: 100%;
+}
+section.contact .container div > *{
+    padding: 10px;
+    border: none;
+    transition: .3s;
+}
+section.contact input{
+    width: 65%;
+    color: #333;
+    background: var(--white);
+}
+section.contact input:hover{
+    padding: 12px;
+    font-size: 18px;
+    color: black;
+    background: white;
+}
+section.contact input:focus{
+    padding: 12px;
+    outline: none;
+    font-size: 18px;
+    color: black;
+    background: white;
+}
+
+section.contact button{
+    width: 25%;
+    font-weight: bold;
+    color: var(--white);
+    background: rgb(26, 26, 26);
+}
+section.contact button:hover{
+    cursor: pointer;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    background: black;
+}
+/* SECTION CONTACT END  */
+
+
+/* SECTION SUBFOOTER  */
+section.subFooter{
+    padding-top: 20px;
+}
+
+div.links{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+div.links .links-box{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+div.links .links-text{
+    display: inline-block;
+    flex-flow: wrap row;
+}
+div.links .links-text > *{
+    margin: 25px 0;
+    color: var(--black);
+}
+div.links .links-box div h2{
+    font-size: 30px;
+}
+div.links .links-box div a{
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .3s;
+}
+div.links .links-box div a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+
+div.social{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+div.social .icons-box{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: 0 auto;
+}
+div.social .icons-box img{
+    width: 30px;
+}
+/* SECTION SUBFOOTER END  */
+
+
+/* FOOTER  */
+footer{
+    padding: 5px;
+    text-align: center;
+    color: var(--white);
+    background: var(--black);
+}
+/* FOOTER END  */
+/* STYLE CSS END  */
+
+
+
+
+/* MEDIA QUERY  */
+@media screen and (min-width: 2500px){
+    /* MAIN  */
+
+    main button{
+        position: relative;
+        top: -60px;
+    }
+    /* MAIN END  */
+
+    /* PRODUCTS  */
+
+    /* PRODUCTS END  */
+}
+
+@media screen and (max-width:1000px){
+    
+
+
+    /* MAIN  */
+    main .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    main .title{
+        font-size: 60px;
+    }
+    main .subTitle{
+        font-size: 30px;
+    }
+    /* MAIN END  */
+
+
+    /* PRODUCTS  */
+    .product-box{
+        flex-basis: 260px;
+        height: 260px;
+    }
+    .product-box p{
+        font-size: 14px;
+    }
+    /* PRODUCTS END  */
+
+
+    /* CONTACT  */
+    section.contact .container{
+
+        flex-flow: wrap row;
+        padding: 20px;
+        width: 90%;
+        height: 30%;
+    }
+    section.contact .container h1{
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+    }
+    section.contact .container div{
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+    }
+    /* CONTACT END  */
+
+
+    /* SUBFOOTER  */
+    section.subFooter .links{
+        flex-flow: wrap row;
+    }
+    section.subFooter .links-box{
+        width: 100%;
+    }
+    section.subFooter .links-text{
+        width: 80%;
+        text-align: center;
+    }
+
+    div.social .icons-box{
+        width: 80%;
+    }
+    /* SUBFOOTER END  */
+
+    /* FOOTER  */
+    /* FOOTER END  */
+
+}
+
+@media screen and (max-width: 500px){
+    /* HEADER  */
+    header{
+        z-index: 1;
+        position: relative;
+        height: auto;
+    }
+    header h1.logo{
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+    header .container{
+        flex-flow: wrap row;
+        justify-content: center;
+        width: 100%;
+    }
+    header div.container > *{
+        width: 100%;
+        margin: 3px 0;
+    }
+
+    header div.desktop{
+        display: none;
+    }
+    header div.mobile{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* HEADER END  */
+}
+/* MEDIA QUERY END  */
