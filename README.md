@@ -8,7 +8,7 @@ This is a landing page that showcases my skills in front-end web development. Th
 
 The header includes a logo and a navigation menu with buttons that lead to different sections of the page, as well as a profile and cart button.
 
-The main section has a big eye-catching banner, wich a call-to-action button. This section is supposed to include any content that should be highlighted in the page.
+The main section has a big eye-catching banner, with a call-to-action button. This section is supposed to include any content that should be highlighted in the page.
 
 The products section has a scrollabe showcase of products, with images and descriptions about each.
 
@@ -22,4 +22,4 @@ The footer contains other low-profile relevant information, such as social media
 
 If you just want to see how it looks, it is up on github pages: https://dcam17.github.io/LandingPage/. 
 
-To run it on your machine, download the code from this repository and open the index.html file in your web browser.
+To run it on your machine, download the code from this repository and open the index.html file with your web browser.
